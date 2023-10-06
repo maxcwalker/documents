@@ -1,0 +1,40 @@
+Running SLURM prolog script on indigo57.cluster.local
+===============================================================================
+Job started on Mon Feb  6 16:09:10 GMT 2023
+Job ID          : 2468662
+Job name        : katzer_SBLI_test.slrum
+WorkDir         : /mainfs/home/mcww1g22/openSBLI/opensbli-cpc_release/apps/katzer_SBLI_test/build
+Command         : /mainfs/home/mcww1g22/openSBLI/opensbli-cpc_release/apps/katzer_SBLI_test/build/katzer_SBLI_test.slrum
+Partition       : gpu
+Num hosts       : 1
+Num cores       : 1
+Num of tasks    : 1
+Hosts allocated : indigo57
+Job Output Follows ...
+===============================================================================
+Changed directory to /mainfs/home/mcww1g22/openSBLI/opensbli-cpc_release/apps/katzer_SBLI_test/build.
+
+
+Timings are:
+-----------------------------------------
+Total Wall time 847.188730
+File opensbli_output.h5 does not exist .... creating file
+==============================================================================
+Running epilogue script on indigo57.
+
+Submit time  : 2023-02-06T15:41:44
+Start time   : 2023-02-06T16:09:10
+End time     : 2023-02-06T16:23:22
+Elapsed time : 00:14:12 (Timelimit=01:00:00)
+
+Job ID: 2468662
+Cluster: i5
+User/Group: mcww1g22/mm
+State: COMPLETED (exit code 0)
+Cores: 1
+CPU Utilized: 00:14:09
+CPU Efficiency: 99.65% of 00:14:12 core-walltime
+Job Wall-clock time: 00:14:12
+Memory Utilized: 173.66 MB
+Memory Efficiency: 4.29% of 3.96 GB
+

@@ -1,0 +1,14 @@
+/home/mcww1g22/openSBLI/opensbli-cpc_release/apps/katzer_SBLI_test/build/CMakeFiles/OpenSBLI_seq_dev.dir
+/home/mcww1g22/openSBLI/opensbli-cpc_release/apps/katzer_SBLI_test/build/CMakeFiles/OpenSBLI_seq.dir
+/home/mcww1g22/openSBLI/opensbli-cpc_release/apps/katzer_SBLI_test/build/CMakeFiles/OpenSBLI_cuda.dir
+/home/mcww1g22/openSBLI/opensbli-cpc_release/apps/katzer_SBLI_test/build/CMakeFiles/OpenSBLI_opencl.dir
+/home/mcww1g22/openSBLI/opensbli-cpc_release/apps/katzer_SBLI_test/build/CMakeFiles/OpenSBLI_mpi_dev.dir
+/home/mcww1g22/openSBLI/opensbli-cpc_release/apps/katzer_SBLI_test/build/CMakeFiles/OpenSBLI_mpi.dir
+/home/mcww1g22/openSBLI/opensbli-cpc_release/apps/katzer_SBLI_test/build/CMakeFiles/OpenSBLI_mpi_cuda.dir
+/home/mcww1g22/openSBLI/opensbli-cpc_release/apps/katzer_SBLI_test/build/CMakeFiles/OpenSBLI_mpi_opencl.dir
+/home/mcww1g22/openSBLI/opensbli-cpc_release/apps/katzer_SBLI_test/build/CMakeFiles/edit_cache.dir
+/home/mcww1g22/openSBLI/opensbli-cpc_release/apps/katzer_SBLI_test/build/CMakeFiles/rebuild_cache.dir
+/home/mcww1g22/openSBLI/opensbli-cpc_release/apps/katzer_SBLI_test/build/CMakeFiles/list_install_components.dir
+/home/mcww1g22/openSBLI/opensbli-cpc_release/apps/katzer_SBLI_test/build/CMakeFiles/install.dir
+/home/mcww1g22/openSBLI/opensbli-cpc_release/apps/katzer_SBLI_test/build/CMakeFiles/install/local.dir
+/home/mcww1g22/openSBLI/opensbli-cpc_release/apps/katzer_SBLI_test/build/CMakeFiles/install/strip.dir
