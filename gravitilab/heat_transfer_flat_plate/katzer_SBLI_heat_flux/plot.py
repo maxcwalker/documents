@@ -103,16 +103,16 @@ class KatzerPlot(plotFunctions):
         dudy = sum(D11*var*coeffs)/delta
         return dudy
     
-    def compute_temperature_derivative(self, variable):
-        nx = numpy.size(self.x[:, 0])
-        Lx = self.Lx
-        delta = Lx/(nx-1.0)
-        D11 = self.D11[0:6, :]
-        var = variable[0:6, :]
-        coeffs = numpy.array([-1.83333333333334, 3.00000000000002, -1.50000000000003, 0.333333333333356, -8.34617916606957e-15, 1.06910884386911e-15])
-        coeffs = coeffs.reshape([6, 1])
-        dudy = sum(D11*var*coeffs)/delta
-        return dudy
+    # def compute_temperature_derivative(self, variable):
+    #     nx = numpy.size(self.x[:, 0])
+    #     Lx = self.Lx
+    #     delta = Lx/(nx-1.0)
+    #     D11 = self.D11[0:6, :]
+    #     var = variable[0:6, :]
+    #     coeffs = numpy.array([-1.83333333333334, 3.00000000000002, -1.50000000000003, 0.333333333333356, -8.34617916606957e-15, 1.06910884386911e-15])
+    #     coeffs = coeffs.reshape([6, 1])
+    #     dTdy = sum(D11*var*coeffs)/delta
+    #     return dTdy
 
     def compute_viscosity(self, T):
         mu = (T**(1.5)*(1.0+self.SuthT/self.RefT)/(T+self.SuthT/self.RefT))
@@ -125,6 +125,12 @@ class KatzerPlot(plotFunctions):
         tau_wall = dudy*mu_wall
         Cf = tau_wall/(0.5*self.Re)
         return Cf
+    
+    def compute_wall_heat_flux(self,T,mu):
+        dTdy = self.compute_wall_derivative(T)
+        k = 0.026 #for air at 298K
+        q_dot = -k*dTdy
+        return q_dot
 
     def SBLI_comparison(self, Cf, P):
         # Skin friction plot
@@ -195,3 +201,7 @@ if not os.path.exists(directory):
 
 KP = KatzerPlot()
 KP.main_plot(fname, n_contour_levels)
+
+f, group = KP.read_file(fname)
+rho, u, v, rhoE, p, T, M, mu = KP.extract_flow_variables(group)
+q_dot = KP.compute_wall_heat_flux(T,mu)
