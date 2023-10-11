@@ -39,10 +39,6 @@ for i, CR in enumerate(constituent_eqns):
 
 block = SimulationBlock(ndim, block_number=0)
 
-for eqn in base_eqns:
-    pprint(eqn)
-    print("--------------")
-exit()
 # Create metrics before the scheme selection
 metriceq = MetricsEquation()
 metriceq.generate_transformations(ndim, coordinate_symbol, [(False, False), (True, False)], 2)

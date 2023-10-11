@@ -6,7 +6,7 @@ import os.path
 import matplotlib.cm as cm
 import os
 
-plt.style.use('classic')
+# plt.style.use('classic')
 
 
 class plotFunctions(object):
@@ -36,9 +36,9 @@ class plotFunctions(object):
         read_start = [abs(d) for d in d_m]
         read_end = [s-abs(d) for d, s in zip(d_m, size)]
         if len(read_end) == 2:
-            read_data = group["%s" % (dataset)].value[read_start[0]:read_end[0], read_start[1]:read_end[1]]
+            read_data = group["%s" % (dataset)][read_start[0]:read_end[0], read_start[1]:read_end[1]]
         elif len(read_end) == 3:
-            read_data = group["%s" % (dataset)].value[read_start[0]:read_end[0], read_start[1]:read_end[1], read_start[2]:read_end[2]]
+            read_data = group["%s" % (dataset)][read_start[0]:read_end[0], read_start[1]:read_end[1], read_start[2]:read_end[2]]
         else:
             raise NotImplementedError("")
         return read_data
@@ -204,4 +204,15 @@ KP.main_plot(fname, n_contour_levels)
 
 f, group = KP.read_file(fname)
 rho, u, v, rhoE, p, T, M, mu = KP.extract_flow_variables(group)
+x, y = KP.extract_coordinates()
+
 q_dot = KP.compute_wall_heat_flux(T,mu)
+
+fig1,ax1 = plt.subplots()
+ax1.plot(x[0,:]/400, q_dot)
+ax1.set_ylabel('Normalised Wall heat flux')
+ax1.set_xlabel('position along x')
+ax1.set_title('Normalised wall heat flux for an impinging shoch on a flat plate')
+ax1.grid()
+fig1.savefig("wall_heat_flux_katzer.pdf")
+plt.show()

@@ -32,11 +32,14 @@ omega = 0.76 # taken from paper for a turbulent bl
 # if Re < 2000:
 #     T_cal = 1+0.032*M_e**2 + 0.58(T_aw/T_e - 1) # this is T'/T_inf
 # else:
-T_cal = 1+0.035*M_e**2 + 0.45*(T_aw/T_w - 1) # T'/T_inf
+T_cal = 1+0.035*M_e**2 + 0.45*(T_aw/T_w - 1) # this is T'/T_inf
+
 
 c_f = 0.0592 / (np.sqrt(Re)*T_cal**((1-omega)/2))
 
+
 St = c_f / (2*Pr**(2/3))
+
 
 q_c = St*rho_e*u*cp*(T_aw-T_w)
 
