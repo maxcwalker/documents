@@ -407,6 +407,7 @@ void ops_decl_const_char(int dim, char const * type, int typeSize, char * dat, c
   }
   
 //user kernel files
+<<<<<<< HEAD
 #include "opensbliblock00Kernel029_opencl_kernel.cpp"
 #include "opensbliblock00Kernel024_opencl_kernel.cpp"
 #include "opensbliblock00Kernel011_opencl_kernel.cpp"
@@ -434,3 +435,32 @@ void ops_decl_const_char(int dim, char const * type, int typeSize, char * dat, c
 #include "opensbliblock00Kernel016_opencl_kernel.cpp"
 #include "opensbliblock00Kernel023_opencl_kernel.cpp"
 #include "opensbliblock00Kernel002_opencl_kernel.cpp"
+=======
+#include "opensbliblock00Kernel030_opencl_kernel.cpp"
+#include "opensbliblock00Kernel025_opencl_kernel.cpp"
+#include "opensbliblock00Kernel009_opencl_kernel.cpp"
+#include "opensbliblock00Kernel021_opencl_kernel.cpp"
+#include "opensbliblock00Kernel002_opencl_kernel.cpp"
+#include "opensbliblock00Kernel020_opencl_kernel.cpp"
+#include "opensbliblock00Kernel011_opencl_kernel.cpp"
+#include "opensbliblock00Kernel001_opencl_kernel.cpp"
+#include "opensbliblock00Kernel004_opencl_kernel.cpp"
+#include "opensbliblock00Kernel008_opencl_kernel.cpp"
+#include "opensbliblock00Kernel010_opencl_kernel.cpp"
+#include "opensbliblock00Kernel039_opencl_kernel.cpp"
+#include "opensbliblock00Kernel022_opencl_kernel.cpp"
+#include "opensbliblock00Kernel031_opencl_kernel.cpp"
+#include "opensbliblock00Kernel000_opencl_kernel.cpp"
+#include "opensbliblock00Kernel038_opencl_kernel.cpp"
+#include "opensbliblock00Kernel032_opencl_kernel.cpp"
+#include "opensbliblock00Kernel006_opencl_kernel.cpp"
+#include "opensbliblock00Kernel012_opencl_kernel.cpp"
+#include "opensbliblock00Kernel023_opencl_kernel.cpp"
+#include "opensbliblock00Kernel016_opencl_kernel.cpp"
+#include "opensbliblock00Kernel033_opencl_kernel.cpp"
+#include "opensbliblock00Kernel007_opencl_kernel.cpp"
+#include "opensbliblock00Kernel024_opencl_kernel.cpp"
+#include "opensbliblock00Kernel026_opencl_kernel.cpp"
+#include "opensbliblock00Kernel003_opencl_kernel.cpp"
+#include "opensbliblock00Kernel029_opencl_kernel.cpp"
+>>>>>>> 04735e8652de3d2dec770d04ef7c03ca6303cc9e

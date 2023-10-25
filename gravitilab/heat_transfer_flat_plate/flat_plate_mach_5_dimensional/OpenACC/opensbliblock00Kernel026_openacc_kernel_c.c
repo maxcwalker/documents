@@ -23,6 +23,10 @@ inline
    double rhou1 = 0.0;
    Twalld = Twall;
 
+<<<<<<< HEAD
+=======
+   T = pref*invRhat/rho;
+>>>>>>> 04735e8652de3d2dec770d04ef7c03ca6303cc9e
 
     rhou0 = ((OPS_ACC(x1_B0, 0,0) < 0.000546454645464546) ? (
    0.858698693583218 + 1.39657329019463e+122*pow(OPS_ACC(x1_B0, 0,0), 34) +
@@ -123,9 +127,14 @@ inline
 
       297.000003052167
 ));
+<<<<<<< HEAD
    T = 297.0;
 
    rho = 1202.74707431774;
+=======
+
+   rho = 1202.74707431774/T;
+>>>>>>> 04735e8652de3d2dec770d04ef7c03ca6303cc9e
 
    OPS_ACC(rhou0_B0, 0,0) = rhou0;
 

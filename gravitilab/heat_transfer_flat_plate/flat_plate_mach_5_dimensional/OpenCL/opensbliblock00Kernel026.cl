@@ -36,7 +36,11 @@
  void opensbliblock00Kernel026(const ptr_double x1_B0,
   ptr_double rhoE_B0,
   ptr_double rhou0_B0,
+<<<<<<< HEAD
   ptr_double rhou1_B0, const double Twall, const double inv2Minf, const double inv_gamma_m1, const double invgama)
+=======
+  ptr_double rhou1_B0, const double Twall, const double inv2Minf, const double invRhat, const double inv_gamma_m1, const double invgama, const double pref)
+>>>>>>> 04735e8652de3d2dec770d04ef7c03ca6303cc9e
 {
    double T = 0.0;
    double Twalld = 0.0;
@@ -45,6 +49,10 @@
    double rhou1 = 0.0;
    Twalld = Twall;
 
+<<<<<<< HEAD
+=======
+   T = pref*invRhat/rho;
+>>>>>>> 04735e8652de3d2dec770d04ef7c03ca6303cc9e
 
     rhou0 = ((OPS_ACCS(x1_B0, 0,0) < 0.000546454645464546) ? (
    0.858698693583218 + 1.39657329019463e+122*pow(OPS_ACCS(x1_B0, 0,0), 34) +
@@ -145,9 +153,14 @@
 
       297.000003052167
 ));
+<<<<<<< HEAD
    T = 297.0;
 
    rho = 1202.74707431774;
+=======
+
+   rho = 1202.74707431774/T;
+>>>>>>> 04735e8652de3d2dec770d04ef7c03ca6303cc9e
 
    OPS_ACCS(rhou0_B0, 0,0) = rhou0;
 
@@ -165,8 +178,15 @@ __global double* restrict arg2,
 __global double* restrict arg3,
 const double Twall,
 const double inv2Minf,
+<<<<<<< HEAD
 const double inv_gamma_m1,
 const double invgama,
+=======
+const double invRhat,
+const double inv_gamma_m1,
+const double invgama,
+const double pref,
+>>>>>>> 04735e8652de3d2dec770d04ef7c03ca6303cc9e
 const int base0,
 const int base1,
 const int base2,
@@ -189,8 +209,15 @@ const int size1 ){
                                   ptr3,
                                   Twall,
                                   inv2Minf,
+<<<<<<< HEAD
                                   inv_gamma_m1,
                                   invgama);
+=======
+                                  invRhat,
+                                  inv_gamma_m1,
+                                  invgama,
+                                  pref);
+>>>>>>> 04735e8652de3d2dec770d04ef7c03ca6303cc9e
   }
 
 }

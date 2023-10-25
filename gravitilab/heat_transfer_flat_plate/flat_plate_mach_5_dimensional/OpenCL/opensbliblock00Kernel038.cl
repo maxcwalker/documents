@@ -56,6 +56,7 @@ ptr_double D11_B0,
    double d1_D10_dy = 0.0;
    double d1_D11_dx = 0.0;
    double d1_D11_dy = 0.0;
+<<<<<<< HEAD
     d1_D01_dx = invDelta0block0*((idx[0] == 0) ? (
    -3*OPS_ACCS(D01_B0, 2,0) + 4*OPS_ACCS(D01_B0, 1,0) - (25.0/12.0)*OPS_ACCS(D01_B0, 0,0) -
       (1.0/4.0)*OPS_ACCS(D01_B0, 4,0) + ((4.0/3.0))*OPS_ACCS(D01_B0, 3,0)
@@ -144,6 +145,8 @@ ptr_double D11_B0,
       (1.0/12.0)*OPS_ACCS(D00_B0, 0,2) + ((1.0/12.0))*OPS_ACCS(D00_B0, 0,-2) + ((2.0/3.0))*OPS_ACCS(D00_B0, 0,1)
 )))));
 
+=======
+>>>>>>> 04735e8652de3d2dec770d04ef7c03ca6303cc9e
     d1_D11_dx = invDelta0block0*((idx[0] == 0) ? (
    -3*OPS_ACCS(D11_B0, 2,0) + 4*OPS_ACCS(D11_B0, 1,0) - (25.0/12.0)*OPS_ACCS(D11_B0, 0,0) -
       (1.0/4.0)*OPS_ACCS(D11_B0, 4,0) + ((4.0/3.0))*OPS_ACCS(D11_B0, 3,0)
@@ -166,6 +169,7 @@ ptr_double D11_B0,
       (1.0/12.0)*OPS_ACCS(D11_B0, 2,0) + ((1.0/12.0))*OPS_ACCS(D11_B0, -2,0) + ((2.0/3.0))*OPS_ACCS(D11_B0, 1,0)
 )))));
 
+<<<<<<< HEAD
     d1_D11_dy = invDelta1block0*((idx[1] == 0) ? (
    -3*OPS_ACCS(D11_B0, 0,2) + 4*OPS_ACCS(D11_B0, 0,1) - (25.0/12.0)*OPS_ACCS(D11_B0, 0,0) -
       (1.0/4.0)*OPS_ACCS(D11_B0, 0,4) + ((4.0/3.0))*OPS_ACCS(D11_B0, 0,3)
@@ -186,6 +190,28 @@ ptr_double D11_B0,
 : (
    -(2.0/3.0)*OPS_ACCS(D11_B0, 0,-1) -
       (1.0/12.0)*OPS_ACCS(D11_B0, 0,2) + ((1.0/12.0))*OPS_ACCS(D11_B0, 0,-2) + ((2.0/3.0))*OPS_ACCS(D11_B0, 0,1)
+=======
+    d1_D01_dx = invDelta0block0*((idx[0] == 0) ? (
+   -3*OPS_ACCS(D01_B0, 2,0) + 4*OPS_ACCS(D01_B0, 1,0) - (25.0/12.0)*OPS_ACCS(D01_B0, 0,0) -
+      (1.0/4.0)*OPS_ACCS(D01_B0, 4,0) + ((4.0/3.0))*OPS_ACCS(D01_B0, 3,0)
+)
+: ((idx[0] == 1) ? (
+   -(5.0/6.0)*OPS_ACCS(D01_B0, 0,0) -
+      (1.0/2.0)*OPS_ACCS(D01_B0, 2,0) - (1.0/4.0)*OPS_ACCS(D01_B0, -1,0) + ((1.0/12.0))*OPS_ACCS(D01_B0, 3,0) + ((3.0/2.0))*OPS_ACCS(D01_B0, 1,0)
+)
+: ((idx[0]
+      == -1 + block0np0) ? (
+   -4*OPS_ACCS(D01_B0, -1,0) + 3*OPS_ACCS(D01_B0, -2,0) - (4.0/3.0)*OPS_ACCS(D01_B0, -3,0) + ((1.0/4.0))*OPS_ACCS(D01_B0, -4,0) +
+      ((25.0/12.0))*OPS_ACCS(D01_B0, 0,0)
+)
+: ((idx[0] == -2 + block0np0) ? (
+   ((1.0/2.0))*OPS_ACCS(D01_B0, -2,0) - (3.0/2.0)*OPS_ACCS(D01_B0, -1,0)
+      - (1.0/12.0)*OPS_ACCS(D01_B0, -3,0) + ((1.0/4.0))*OPS_ACCS(D01_B0, 1,0) + ((5.0/6.0))*OPS_ACCS(D01_B0, 0,0)
+)
+: (
+   -(2.0/3.0)*OPS_ACCS(D01_B0, -1,0) -
+      (1.0/12.0)*OPS_ACCS(D01_B0, 2,0) + ((1.0/12.0))*OPS_ACCS(D01_B0, -2,0) + ((2.0/3.0))*OPS_ACCS(D01_B0, 1,0)
+>>>>>>> 04735e8652de3d2dec770d04ef7c03ca6303cc9e
 )))));
 
     d1_D10_dx = invDelta0block0*((idx[0] == 0) ? (
@@ -210,6 +236,53 @@ ptr_double D11_B0,
       (1.0/12.0)*OPS_ACCS(D10_B0, 2,0) + ((1.0/12.0))*OPS_ACCS(D10_B0, -2,0) + ((2.0/3.0))*OPS_ACCS(D10_B0, 1,0)
 )))));
 
+<<<<<<< HEAD
+=======
+    d1_D11_dy = invDelta1block0*((idx[1] == 0) ? (
+   -3*OPS_ACCS(D11_B0, 0,2) + 4*OPS_ACCS(D11_B0, 0,1) - (25.0/12.0)*OPS_ACCS(D11_B0, 0,0) -
+      (1.0/4.0)*OPS_ACCS(D11_B0, 0,4) + ((4.0/3.0))*OPS_ACCS(D11_B0, 0,3)
+)
+: ((idx[1] == 1) ? (
+   -(5.0/6.0)*OPS_ACCS(D11_B0, 0,0) -
+      (1.0/2.0)*OPS_ACCS(D11_B0, 0,2) - (1.0/4.0)*OPS_ACCS(D11_B0, 0,-1) + ((1.0/12.0))*OPS_ACCS(D11_B0, 0,3) + ((3.0/2.0))*OPS_ACCS(D11_B0, 0,1)
+)
+: ((idx[1]
+      == -1 + block0np1) ? (
+   -4*OPS_ACCS(D11_B0, 0,-1) + 3*OPS_ACCS(D11_B0, 0,-2) - (4.0/3.0)*OPS_ACCS(D11_B0, 0,-3) + ((1.0/4.0))*OPS_ACCS(D11_B0, 0,-4) +
+      ((25.0/12.0))*OPS_ACCS(D11_B0, 0,0)
+)
+: ((idx[1] == -2 + block0np1) ? (
+   ((1.0/2.0))*OPS_ACCS(D11_B0, 0,-2) - (3.0/2.0)*OPS_ACCS(D11_B0, 0,-1)
+      - (1.0/12.0)*OPS_ACCS(D11_B0, 0,-3) + ((1.0/4.0))*OPS_ACCS(D11_B0, 0,1) + ((5.0/6.0))*OPS_ACCS(D11_B0, 0,0)
+)
+: (
+   -(2.0/3.0)*OPS_ACCS(D11_B0, 0,-1) -
+      (1.0/12.0)*OPS_ACCS(D11_B0, 0,2) + ((1.0/12.0))*OPS_ACCS(D11_B0, 0,-2) + ((2.0/3.0))*OPS_ACCS(D11_B0, 0,1)
+)))));
+
+    d1_D00_dy = invDelta1block0*((idx[1] == 0) ? (
+   -3*OPS_ACCS(D00_B0, 0,2) + 4*OPS_ACCS(D00_B0, 0,1) - (25.0/12.0)*OPS_ACCS(D00_B0, 0,0) -
+      (1.0/4.0)*OPS_ACCS(D00_B0, 0,4) + ((4.0/3.0))*OPS_ACCS(D00_B0, 0,3)
+)
+: ((idx[1] == 1) ? (
+   -(5.0/6.0)*OPS_ACCS(D00_B0, 0,0) -
+      (1.0/2.0)*OPS_ACCS(D00_B0, 0,2) - (1.0/4.0)*OPS_ACCS(D00_B0, 0,-1) + ((1.0/12.0))*OPS_ACCS(D00_B0, 0,3) + ((3.0/2.0))*OPS_ACCS(D00_B0, 0,1)
+)
+: ((idx[1]
+      == -1 + block0np1) ? (
+   -4*OPS_ACCS(D00_B0, 0,-1) + 3*OPS_ACCS(D00_B0, 0,-2) - (4.0/3.0)*OPS_ACCS(D00_B0, 0,-3) + ((1.0/4.0))*OPS_ACCS(D00_B0, 0,-4) +
+      ((25.0/12.0))*OPS_ACCS(D00_B0, 0,0)
+)
+: ((idx[1] == -2 + block0np1) ? (
+   ((1.0/2.0))*OPS_ACCS(D00_B0, 0,-2) - (3.0/2.0)*OPS_ACCS(D00_B0, 0,-1)
+      - (1.0/12.0)*OPS_ACCS(D00_B0, 0,-3) + ((1.0/4.0))*OPS_ACCS(D00_B0, 0,1) + ((5.0/6.0))*OPS_ACCS(D00_B0, 0,0)
+)
+: (
+   -(2.0/3.0)*OPS_ACCS(D00_B0, 0,-1) -
+      (1.0/12.0)*OPS_ACCS(D00_B0, 0,2) + ((1.0/12.0))*OPS_ACCS(D00_B0, 0,-2) + ((2.0/3.0))*OPS_ACCS(D00_B0, 0,1)
+)))));
+
+>>>>>>> 04735e8652de3d2dec770d04ef7c03ca6303cc9e
     d1_D10_dy = invDelta1block0*((idx[1] == 0) ? (
    -3*OPS_ACCS(D10_B0, 0,2) + 4*OPS_ACCS(D10_B0, 0,1) - (25.0/12.0)*OPS_ACCS(D10_B0, 0,0) -
       (1.0/4.0)*OPS_ACCS(D10_B0, 0,4) + ((4.0/3.0))*OPS_ACCS(D10_B0, 0,3)
@@ -232,6 +305,53 @@ ptr_double D11_B0,
       (1.0/12.0)*OPS_ACCS(D10_B0, 0,2) + ((1.0/12.0))*OPS_ACCS(D10_B0, 0,-2) + ((2.0/3.0))*OPS_ACCS(D10_B0, 0,1)
 )))));
 
+<<<<<<< HEAD
+=======
+    d1_D01_dy = invDelta1block0*((idx[1] == 0) ? (
+   -3*OPS_ACCS(D01_B0, 0,2) + 4*OPS_ACCS(D01_B0, 0,1) - (25.0/12.0)*OPS_ACCS(D01_B0, 0,0) -
+      (1.0/4.0)*OPS_ACCS(D01_B0, 0,4) + ((4.0/3.0))*OPS_ACCS(D01_B0, 0,3)
+)
+: ((idx[1] == 1) ? (
+   -(5.0/6.0)*OPS_ACCS(D01_B0, 0,0) -
+      (1.0/2.0)*OPS_ACCS(D01_B0, 0,2) - (1.0/4.0)*OPS_ACCS(D01_B0, 0,-1) + ((1.0/12.0))*OPS_ACCS(D01_B0, 0,3) + ((3.0/2.0))*OPS_ACCS(D01_B0, 0,1)
+)
+: ((idx[1]
+      == -1 + block0np1) ? (
+   -4*OPS_ACCS(D01_B0, 0,-1) + 3*OPS_ACCS(D01_B0, 0,-2) - (4.0/3.0)*OPS_ACCS(D01_B0, 0,-3) + ((1.0/4.0))*OPS_ACCS(D01_B0, 0,-4) +
+      ((25.0/12.0))*OPS_ACCS(D01_B0, 0,0)
+)
+: ((idx[1] == -2 + block0np1) ? (
+   ((1.0/2.0))*OPS_ACCS(D01_B0, 0,-2) - (3.0/2.0)*OPS_ACCS(D01_B0, 0,-1)
+      - (1.0/12.0)*OPS_ACCS(D01_B0, 0,-3) + ((1.0/4.0))*OPS_ACCS(D01_B0, 0,1) + ((5.0/6.0))*OPS_ACCS(D01_B0, 0,0)
+)
+: (
+   -(2.0/3.0)*OPS_ACCS(D01_B0, 0,-1) -
+      (1.0/12.0)*OPS_ACCS(D01_B0, 0,2) + ((1.0/12.0))*OPS_ACCS(D01_B0, 0,-2) + ((2.0/3.0))*OPS_ACCS(D01_B0, 0,1)
+)))));
+
+    d1_D00_dx = invDelta0block0*((idx[0] == 0) ? (
+   -3*OPS_ACCS(D00_B0, 2,0) + 4*OPS_ACCS(D00_B0, 1,0) - (25.0/12.0)*OPS_ACCS(D00_B0, 0,0) -
+      (1.0/4.0)*OPS_ACCS(D00_B0, 4,0) + ((4.0/3.0))*OPS_ACCS(D00_B0, 3,0)
+)
+: ((idx[0] == 1) ? (
+   -(5.0/6.0)*OPS_ACCS(D00_B0, 0,0) -
+      (1.0/2.0)*OPS_ACCS(D00_B0, 2,0) - (1.0/4.0)*OPS_ACCS(D00_B0, -1,0) + ((1.0/12.0))*OPS_ACCS(D00_B0, 3,0) + ((3.0/2.0))*OPS_ACCS(D00_B0, 1,0)
+)
+: ((idx[0]
+      == -1 + block0np0) ? (
+   -4*OPS_ACCS(D00_B0, -1,0) + 3*OPS_ACCS(D00_B0, -2,0) - (4.0/3.0)*OPS_ACCS(D00_B0, -3,0) + ((1.0/4.0))*OPS_ACCS(D00_B0, -4,0) +
+      ((25.0/12.0))*OPS_ACCS(D00_B0, 0,0)
+)
+: ((idx[0] == -2 + block0np0) ? (
+   ((1.0/2.0))*OPS_ACCS(D00_B0, -2,0) - (3.0/2.0)*OPS_ACCS(D00_B0, -1,0)
+      - (1.0/12.0)*OPS_ACCS(D00_B0, -3,0) + ((1.0/4.0))*OPS_ACCS(D00_B0, 1,0) + ((5.0/6.0))*OPS_ACCS(D00_B0, 0,0)
+)
+: (
+   -(2.0/3.0)*OPS_ACCS(D00_B0, -1,0) -
+      (1.0/12.0)*OPS_ACCS(D00_B0, 2,0) + ((1.0/12.0))*OPS_ACCS(D00_B0, -2,0) + ((2.0/3.0))*OPS_ACCS(D00_B0, 1,0)
+)))));
+
+>>>>>>> 04735e8652de3d2dec770d04ef7c03ca6303cc9e
    OPS_ACCS(SD000_B0, 0,0) = d1_D00_dx;
 
    OPS_ACCS(SD001_B0, 0,0) = d1_D00_dy;

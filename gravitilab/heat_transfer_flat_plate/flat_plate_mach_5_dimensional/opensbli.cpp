@@ -15,19 +15,33 @@ block0np0 = 500.0;
 block0np1 = 250.0;
 Delta0block0 = 400.0*0.00027387/(block0np0-1);
 Delta1block0 = 115.0*0.00027387/(block0np1-1);
+<<<<<<< HEAD
 niter = 0;
 double rkB[] = {0.924574112262461, 0.287712943868770, 0.626538293270800};
 double rkA[] = {0.0, -2.91549395770192, 0.0};
 dt = 0.00001;
 Twall = 1.6;
 Minf = 5.0;
+=======
+niter = 10;
+double rkB[] = {0.924574112262461, 0.287712943868770, 0.626538293270800};
+double rkA[] = {0.0, -2.91549395770192, 0.0};
+dt = 0.00001;
+Minf = 5.0;
+Twall = 1.6;
+>>>>>>> 04735e8652de3d2dec770d04ef7c03ca6303cc9e
 write_output_file = 2500;
 HDF5_timing = 0;
 gama = 1.4;
 SuthT = 110.4;
 RefT = 297.0;
+<<<<<<< HEAD
 Pr = 0.72;
 Re = 1.0;
+=======
+Re = 1.0;
+Pr = 0.72;
+>>>>>>> 04735e8652de3d2dec770d04ef7c03ca6303cc9e
 pref = 10000;
 Rhat = 8.3143;
 inv2Delta0block0 = 1.0/(Delta0block0*Delta0block0);
@@ -105,7 +119,10 @@ simulation_time = 0.0;
 start_iter = 0;
 }
 tstart = simulation_time;
+<<<<<<< HEAD
 HDF5_IO_Write_0_opensbliblock00_dynamic(opensbliblock00, 0, rho_B0, rhou0_B0, rhou1_B0, rhoE_B0, x0_B0, x1_B0, D11_B0, HDF5_timing);
+=======
+>>>>>>> 04735e8652de3d2dec770d04ef7c03ca6303cc9e
 
 if (restart == 0){
 int iteration_range_26_block0[] = {-2, block0np0 + 2, -2, block0np1 + 2};
