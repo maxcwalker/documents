@@ -1,0 +1,4 @@
+rm -rf MPI_* opensbli* HIP/ CUDA/ constants.h bc_exchanges.h stencils.h io.h slurm-* Op* ipo_out.optrpt defdec* lat*
+python $1
+make opensbli_mpi
+mpirun -np 4 ./opensbli_mpi
